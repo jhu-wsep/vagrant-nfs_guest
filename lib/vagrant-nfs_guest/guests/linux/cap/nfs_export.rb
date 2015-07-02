@@ -12,15 +12,15 @@ module VagrantPlugins
           end
 
           def self.nfs_check_command(env)
-            "/etc/init.d/nfs-kernel-server status"
+            "systemctl status nfs-server"
           end
 
           def self.nfs_start_command(env)
-            "/etc/init.d/nfs-kernel-server start"
+            "systemctl start nfs-server"
           end
 
           def self.nfs_check_command(env)
-            "/etc/init.d/nfs-kernel-server status"
+            "systemctl status nfs-server"
           end
 
           def self.nfs_test_command(env)
